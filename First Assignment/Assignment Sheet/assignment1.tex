@@ -1,0 +1,186 @@
+\documentclass[12pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{babel}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[unicode=true]{hyperref}
+
+\newcommand{\ds}{\displaystyle}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\lhead{MATH1051 - Semester 2 2023}
+\chead{Assignment I}
+\rhead{Due: {\bf Friday 18 August, 3 pm.}}
+
+\makeatother
+
+\begin{document}
+
+
+\begin{itemize}
+\item Write your answers clearly. Illegible assignments will not be marked. 
+\item Show all your workings. Correct answers without justification will
+not receive full marks.
+\item Wherever possible, answers should be given in exact form.
+\item This assignment is worth 10\% of the total assessment for the course.
+
+\item Submit your assignment as a {\bf single PDF} via the Assignment submission
+link on Blackboard.
+\item Submit all applications for extensions via the my.UQ portal. 
+\item Marking: The total mark is $25$.
+\begin{itemize}
+\item Marking Scheme for questions worth 1 mark:
+\begin{itemize}
+\item Mark of 0: You have not submitted a relevant answer, or you have no
+strategy present in your submission. 
+\item Mark of 1/2: You have the right approach, but need to fine-tune some
+aspects of your justification/calculations. 
+\item Mark of 1: You have demonstrated a good understanding of the topic
+and techniques involved, with clear justification and well-executed
+calculations. 
+\end{itemize}
+\item Marking Scheme for questions worth 3 marks:
+\begin{itemize}
+\item Mark of 0: You have not submitted a relevant answer, or you have no
+strategy present in your submission. 
+\item Mark of 1: Your submission has some relevance, but does not demonstrate
+deep understanding or sound mathematical technique. This topic needs
+more attention! 
+\item Mark of 2: You have the right approach, but need to fine-tune some
+aspects of your justification/calculations. 
+\item Mark of 3: You have demonstrated a good understanding of the topic
+and techniques involved, with clear justification and well-executed
+calculations. 
+\end{itemize}
+\pagebreak{}
+\end{itemize}
+\end{itemize}
+{\large{}Attach this page to the front of your submission. Remember
+to sign the declaration.\bigskip{}
+}{\large\par}
+\begin{quote}
+\begin{flushleft}
+I hereby state that the work contained in this assignment has not
+previously been submitted for assessment, either in whole or in part,
+by either myself or any other student at either The University of
+Queensland or at any other tertiary institution except where explicitly
+acknowledged. To the best of my knowledge and belief, the assignment
+contains no material that has been previously published or written
+by another person except where due reference is made. I make this
+Statement in full knowledge of an understanding that should it be
+found to be false, I will be subject to disciplinary action under
+Student Integrity and Misconduct Policy 3.60.04 of the University
+of Queensland. The University of Queensland's policy on plagiarism
+can be found at \href{http://ppl.app.uq.edu.au/content/3.60.04-student-integrity-and-misconduct}{http://ppl.app.uq.edu.au/content/3.60.04-student-integrity-and-misconduct}
+(Reference 3.60.04).\\
+\vspace{2cm}
+Name .......................................................................Student
+ID .........................\vspace{2cm}
+\par\end{flushleft}
+
+\noindent Signed .......................................................................Date
+.................................\vspace{0.5cm}
+
+\end{quote}
+
+
+\newpage{}
+
+\vspace{4cm}
+
+\begin{itemize}
+\item[(1)]
+Determine the domains (as subset of $\mathbb{R}$)  of the functions \hfill{(1 mark each)}
+\begin{itemize}
+    \item[(a)] $f_1(x)=\frac{1}{e^{x}-e^{-x}}$,
+    \item[(b)] $f_2(x)=\frac{1}{\sqrt{4-x^2}}$.
+    \item[(c)] $f_3(x)=\log{\arccos{x}}$.
+    
+\end{itemize}
+\item[(2)]
+Given is the function $g(x)=x^2+3x$. For a second function $f$ with $f(3)=0$ we find $(g \circ f)(x) = x^2-3x$. 
+What is the function $f$? Is $f$ unique?
+\hfill{(3 mark)}
+
+
+\item[(3)]
+Determine which of the following functions is 1-1? Prove your answer. \hfill{(1 mark each)}
+\begin{itemize}
+\item[(a)] $f_1(x)=e^{-x^2}$
+\item[(b)] $f_2(x)=2x^2-3x+1$
+\item[(c)] $f_3(x)=|x|+2 \cdot x$
+\end{itemize}
+
+\item[(4)]
+Determine what the following limits are or show that they do not exist: \hfill{(1 mark each)}
+\begin{itemize}
+\item[(a)] $ {\lim \limits_{{n\rightarrow \infty}}} \frac{(n^2+4 n-27)(n^3-1)}{(n(n-1))^2} $
+\item[(b)] $\lim \limits_{n\rightarrow \infty} \frac{3n^2-9n + 48}{4n^3}$
+\item[(c)] $\lim \limits_{n\rightarrow \infty} \frac{(3n+1)^3-27n^3}{n^2}$
+\item[(d)] $\lim \limits_{n\rightarrow \infty} \frac{2n^2}{2n-1}-n$
+\item[(e)] $\lim \limits_{n\rightarrow \infty} \sqrt{n(n+1)}-n$
+\end{itemize}
+
+\vfill\hspace*{\fill}{\em Turn over for more questions}
+
+\newpage
+
+\item[(5)] Consider the sequence $a_n$ defined by the recursion 
+\begin{equation}
+a_n=a_{n-1}-\frac{1}{4}a_{n-2}
+\label{EQ.IV}    
+\end{equation}
+for $n=3,4,5,\ldots$. \hfill{(1 mark each)}
+\begin{itemize}
+    \item[(a)] Calculate $h$ such that $a_n=h^{n-1}$ fulfills the recursive definition~\ref{EQ.IV}.  
+\item[(b)]What is the limit of the sequence $a_n$ (if it exists)?
+\end{itemize}
+
+
+\item[(6)] Given is a sequence $b_n$ defined in recursive form 
+$$
+b_n=\frac{1}{2}\left(b_{n-1}+\frac{A}{b_{n-1}}\right)
+$$
+for a given $A>0$. You can assume that all values of $b_n$ are non-zero.
+\begin{itemize}
+    \item[(a)] For $A=2$ use your calculator (or MATLAB) to calculate the first four values of the sequence $b_n$ starting from $b_1=A$ (this is for $n=1,2,3,4$). Inspecting these values: do you expect the sequence to be convergent or to be divergent?  \hfill{(1 mark)}
+    \item[(b)] Assume you know the sequence $b_n$ is converging, what would be its limit (or its limits)? Justify your answer. Is it consistent with your result of part (a)? \hfill{(3 marks)}
+\end{itemize}
+
+
+\item[(7)] Assume you have given a sequence $c_n$
+with non-zero values ($c_n \not =0$ for $n=1,2,\ldots$)
+that fulfils the condition 
+\begin{equation}
+\left|\frac{c_n}{c_{n-1}}\right| \le q    
+\end{equation}
+for all $n=1,2,3,\ldots$ for some fixed constant $q$ with $0< q <1$.
+\begin{itemize}
+    \item[(a)] Show that $c_n \to 0$ for $n \to \infty$. (Hint: use the squeeze theorem) \hfill{(3 marks)}
+    \item[(b)] Use the result from part(a) to show that
+$\lim \limits_{n\rightarrow \infty} \frac{2^n}{n!} = 0$ \hfill{(1 mark)}
+    \item[(b)] Again: use the result from part(a) to show that
+$\lim \limits_{n\rightarrow \infty} \frac{1}{3^n n^3} = 0$ \hfill{(1 mark)}
+\end{itemize}
+\end{itemize}
+\vspace{4.5cm}
+
+\center{{\bf END OF ASSIGNMENT}}
+
+\end{document}
