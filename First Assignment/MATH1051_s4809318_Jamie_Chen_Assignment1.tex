@@ -1,5 +1,5 @@
 \documentclass[12pt]{report}
-\usepackage[paper=letterpaper,margin=4cm]{geometry}
+\usepackage[paper=letterpaper,margin=3cm]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
@@ -105,7 +105,7 @@
                 %TODO Add a graph of the function $f_1(x)=e^{-x^2}$.
 \newpage
             \item $f_2(x)=2x^2-3x+1$
-                \begin{tcolorbox}[adjusted]
+                \begin{tcolorbox}
                     \begin{itemize}[label={}]
                         \item The function $f_2(x)=2x^2-3x+1$ is not one-to-one. There are several reasons for this:
                         \begin{enumerate}
@@ -126,15 +126,42 @@
                     \end{itemize}
                 \end{tcolorbox}
 
+\newpage
             \item $f_3(x)=|x|+2 \cdot x$
                 \begin{tcolorbox}
                     \begin{itemize}[label={}]
-                        \item The function $f_3(x)=|x|+2 \cdot x$ is not one-to-one. There are several reasons for this:
-                        \begin{enumerate}
-                            \item[1.] The function $f_3(x)$ is not strictly increasing or decreasing.
-                            \item[2.] The function $f_3(x)$ is a piecewise function, and therefore can have two values of $x$ that correspond to the same value of $y$.
-                            \item[3.] Using the definition of a one-to-one function:  
-                        \end{enumerate}
+                        \item The function $f_3(x)=|x|+2 \cdot x$ is one-to-one. There are several reasons for this (using the definition of a one-to-one function):
+                        \begin{equation*}
+                            \begin{array}{r@{~=~}l}
+                                f_3(x_1) & f_3(x_2) \\ [2ex]
+                                |x_1|+2 \cdot x_1 & |x_2|+2 \cdot x_2 \\ [2ex]
+                            \end{array}
+                        \end{equation*}
+                        \item In this case, lets consider that there are two cases:
+                        \item The first case is when $x_1,x_2 \geq 0$:
+                        \item In this case, we can assume that $|x_1|=x_1$ and $|x_2|=x_2$. We can then determine the equation for this case:
+                        \begin{equation*}
+                            |x_1|+2 \cdot x_1 = |x_2|+2 \cdot x_2
+                        \end{equation*}
+                        \item Simplifying this equation gives us:
+                        \begin{equation*}
+                            3x_1 = 3x_2
+                        \end{equation*}
+                        \item Dividing both sides by 3 gives us:
+                        \begin{equation*}
+                            x_1 = x_2
+                        \end{equation*}
+                        \item We can now determine the second case.
+                        \item The second case is when $x_1,x_2 < 0$:
+                        \item In this case, we can assume that $|x_1|=-x_1$ and $|x_2|=-x_2$. We can then determine the equation for this case:
+                        \begin{equation*}
+                            -x_1+2 \cdot x_1 = -x_2+2 \cdot x_2
+                        \end{equation*}
+                        \item Simplifying this equation gives us:
+                        \begin{equation*}
+                            x_1 = x_2
+                        \end{equation*}
+                        \item After determining both cases for the absolute value function, we can see that the function $f_3(x)=|x|+2 \cdot x$ is one-to-one.
                     \end{itemize}
                 \end{tcolorbox}
         \end{enumerate}
@@ -149,28 +176,77 @@
                 \begin{tcolorbox}
                     \begin{equation*}
                         \begin{array}{r@{~=~}l}
-                            {\lim \limits_{{n\rightarrow \infty}}} \frac{(n^2+4 n-27)(n^3-1)}{(n(n-1))^2} & {\lim \limits_{{n\rightarrow \infty}}} \frac{n^5+4n^4-27n^3-n^3+1}{n^4-2n^3+n^2} \\
-                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{n^5+4n^4-28n^3+1}{n^4-2n^3+n^2} \\
-                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{n+4-\frac{28}{n}+\frac{1}{n^3}}{1-\frac{2}{n}+\frac{1}{n^2}}
+                            {\lim \limits_{{n\rightarrow \infty}}} \frac{(n^2+4 n-27)(n^3-1)}{(n(n-1))^2} & {\lim \limits_{{n\rightarrow \infty}}} \frac{n^5+4n^4-27n^3-n^3+1}{n^4-2n^3+n^2} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{n^5+4n^4-28n^3+1}{n^4-2n^3+n^2} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{n+4-\frac{28}{n}+\frac{1}{n^3}}{1-\frac{2}{n}+\frac{1}{n^2}} \\ [2ex]
+                            & \frac{\infty}{1} \\ [2ex]
+                            & \infty
                         \end{array}
                     \end{equation*}
                 \end{tcolorbox}
             \item $\lim \limits_{n\rightarrow \infty} \frac{3n^2-9n + 48}{4n^3}$
-                \begin{itemize}[label={}]
-                    \item 
-                \end{itemize}
+                \begin{tcolorbox}
+                    \begin{equation*}
+                        \begin{array}{r@{~=~}l}
+                            {\lim \limits_{{n\rightarrow \infty}}} \frac{3n^2-9n + 48}{4n^3} & {\lim \limits_{{n\rightarrow \infty}}} \frac{3-\frac{9}{n} + \frac{48}{n^2}}{4n} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{3}{4n} - \frac{9}{4n^2} + \frac{12}{n^3} \\ [2ex]
+                            & 0 \quad \text{Since the limit of } \frac{1}{n} = 0 \text{ as } n \rightarrow \infty.
+                        \end{array}
+                    \end{equation*}
+                \end{tcolorbox}
             \item $\lim \limits_{n\rightarrow \infty} \frac{(3n+1)^3-27n^3}{n^2}$
-                \begin{itemize}[label={}]
-                    \item 
-                \end{itemize}
+                \begin{tcolorbox}
+                    \begin{equation*}
+                        \begin{array}{r@{~=~}l}
+                            {\lim \limits_{{n\rightarrow \infty}}} \frac{(3n+1)^3-27n^3}{n^2} & {\lim \limits_{{n\rightarrow \infty}}} \frac{27n^3+27n^2+9n+1-27n^3}{n^2} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{27n^2+9n+1}{n^2} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} (27+\frac{9}{n}+\frac{1}{n^2}) \\ [2ex]
+                            & 27
+                        \end{array}
+                    \end{equation*}
+                    \begin{itemize}[label={}]
+                        \item $\therefore$ The limit is 27 as $n \rightarrow \infty$.
+                    \end{itemize}
+                \end{tcolorbox}
+\newpage
             \item $\lim \limits_{n\rightarrow \infty} \frac{2n^2}{2n-1}-n$
-                \begin{itemize}[label={}]
-                    \item 
-                \end{itemize}
+                \begin{tcolorbox}
+                    \begin{equation*}
+                        \begin{array}{r@{~=~}l}
+                            {\lim \limits_{{n\rightarrow \infty}}} \frac{2n^2}{2n-1}-n & {\lim \limits_{{n\rightarrow \infty}}} \frac{2n^2}{2n-1}-\frac{n(2n-1)}{2n-1} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{2n^2-n(2n-1)}{2n-1} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{2n^2-2n^2+n}{2n-1} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{n}{2n-1} \\ [2ex]
+                            & {\lim \limits_{{n\rightarrow \infty}}} \frac{1}{2-\frac{1}{n}} \\ [2ex]
+                            & \mfrac{1}{2} \quad \text{Since the limit of } \frac{1}{n} = 0 \text{ as } n \rightarrow \infty.
+                        \end{array}
+                    \end{equation*}
+                    \begin{itemize}[label={}]
+                        \item Therefore, the limit is $\frac{1}{2}$ as $n \rightarrow \infty$.
+                    \end{itemize}
+                \end{tcolorbox}
             \item $\lim \limits_{n\rightarrow \infty} \sqrt{n(n+1)}-n$
-                \begin{itemize}[label={}]
-                    \item 
-                \end{itemize}
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item In this limit, we can find the limit by rationalising the numerator.
+                        \item To do this we can multiply the numerator and denominator by the conjugate of the numerator:
+                        \begin{equation*}
+                            \begin{array}{r@{~=~}l}
+                                {\lim \limits_{{n\rightarrow \infty}}} \sqrt{n(n+1)}-n & {\lim \limits_{{n\rightarrow \infty}}} \sqrt{n(n+1)}-n \times \frac{\sqrt{n(n+1)}+n}{\sqrt{n(n+1)}+n} \\ [2ex]
+                                & {\lim \limits_{{n\rightarrow \infty}}} \frac{n(n+1)-n^2}{\sqrt{n(n+1)}+n} \\ [2ex]
+                            \end{array}
+                        \end{equation*}
+                        \item We can then simplify the equation to find the limit:
+                        \begin{equation*}
+                            \begin{array}{r@{~=~}l}
+                                & {\lim \limits_{{n\rightarrow \infty}}} \frac{n^2+n-n^2}{\sqrt{n(n+1)}+n} \\ [2ex]
+                                & {\lim \limits_{{n\rightarrow \infty}}} \frac{n}{\sqrt{n(n+1)}+n} \\ [2ex]
+                                & {\lim \limits_{{n\rightarrow \infty}}} \frac{1}{\sqrt{1+\frac{1}{n}}+1} \\ [2ex]
+                                & \frac{1}{2} \quad \text{Since the limit of } \frac{1}{n} = 0 \text{ as } n \rightarrow \infty.
+                            \end{array}
+                        \end{equation*}
+                    \end{itemize}
+                \end{tcolorbox}
         \end{enumerate}
 
 %% New Page
