@@ -12,6 +12,20 @@
 \usepackage{graphicx}
 \usepackage{tcolorbox}
 \usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    language=Matlab,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green!70!black},
+    columns=fullflexible,
+    breaklines=true,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
 \graphicspath{ {images/} }
 \tcbuselibrary{raster}
 
@@ -22,7 +36,7 @@
 \setlength{\droptitle}{-6em}
 \pgfplotsset{width=10cm,compat=1.18}
 % Enter the specific assignment number and topic of that assignment below, and replace "Your Name" with your actual name.
-\title{Assignment \# 4: MATH1051} 
+\title{Assignment \# 1: MATH1051} 
 \author{Jamie Chen\\ \text{Student Number:} \texttt{48093189} \\ \text{Semester 2, 2023}}
 \date{\today}
 
@@ -33,24 +47,24 @@
 
     \item {\bf (1 mark each)} Determine the domains (as a subset of $\mathbb{R}$) of the functions:
         \begin{enumerate}
-            \item $f_1(x)=\frac{1}{e^x-e^{-x}}$
-                \begin{itemize}[label={}]
-                    \item 
-                    \item The domain of this function $f_1(x)$ is $\mathbb{R} \setminus \{0\}$.
-                    \item 
-                \end{itemize}
-            \item $f_2(x)=\frac{1}{\sqrt{4-x^2}}$
-                \begin{itemize}[label={}]
-                    \item
-                    \item The domain of this function $f_2(x)$ is $(-2,2)$ (non-inclusive).
-                    \item 
-                \end{itemize}
-            \item $f_3(x)= \log \arccos x$ 
-                \begin{itemize}[label={}]
-                    \item
-                    \item The domain of this function $f_3(x)$ is $[-1,1]$ (inclusive). 
-                    \item 
-                \end{itemize}
+            \item  $f_1(x)=\frac{1}{e^x-e^{-x}}$
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item The domain of this function $f_1(x)$ is $\mathbb{R} \setminus \{0\}$. As the denominator of the function $f_1(x)$ is $e^x-e^{-x}$, we can see that the function is undefined when $e^x-e^{-x}=0$. This occurs when $e^x=e^{-x}$, which is when $x=0$. Therefore, the domain of this function is $\mathbb{R} \setminus \{0\}$.
+                    \end{itemize}
+                \end{tcolorbox}
+            \item  $f_2(x)=\frac{1}{\sqrt{4-x^2}}$
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item The domain of this function $f_2(x)$ is $(-2,2)$ (non-inclusive). As the denominator of the function $f_2(x)$ is $\sqrt{4-x^2}$, we can see that the function is undefined when $\sqrt{4-x^2}=0$. This occurs when $4-x^2=0$, which is when $x=\pm2$. Therefore, the domain of this function is $(-2,2)$ (non-inclusive).
+                    \end{itemize}
+                \end{tcolorbox}
+            \item  $f_3(x)= \log \arccos x$ 
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item The domain of this function $f_3(x)$ is $[-1,1)$ (inclusive from the left, exclusive from the right). As the function $f_3(x)$ is a composition of two functions, we must consider the domain of both functions. The domain of the function $\arccos x$ is $[-1,1]$, and the domain of the function $\log x$ is $(0,\infty)$. Therefore, the domain of the function $f_3(x)$ is $[-1,1)$ (inclusive from the left, exclusive from the right). 
+                    \end{itemize}
+                \end{tcolorbox}
         \end{enumerate}
             
 %% New Page
@@ -58,20 +72,28 @@
 %% Question 2  
 
     \item {\bf (3 marks)} Given is the function $g(x)=x^2+3x$. For a second function $f$ with $f(3)=0$ we find $(g \circ f)(x)=x^2-3x$. What is the function $f$? Is $f$ unique?
-        \begin{itemize}[label={}]
-            \item The function $f$ can be a simple linear function, such as $f(x)=x-3$. 
-            \begin{equation*}
-                \begin{split}
-                    (g \circ f)(x) &= g(f(x)) \\
-                    &= (x-3)^2+3(x-3) \\
-                    &= x^2-6x+9+3x-9 \\
-                    &= x^2-3x
-                \end{split}
-            \end{equation*}
-            However, there are other functions that can be used to achieve the same result. (NOT PROVEN YET)
-            %TODO Prove that there are other functions that can be used to achieve the same result.
-            
-        \end{itemize}
+        \begin{tcolorbox}
+            \begin{itemize}[label={}]
+                \item The function $f$ can be a simple linear function, such as $f(x)=x-3$. 
+                \begin{equation*}
+                    \begin{split}
+                        (g \circ f)(x) &= g(f(x)) \\
+                        &= (x-3)^2+3(x-3) \\
+                        &= x^2-6x+9+3x-9 \\
+                        &= x^2-3x
+                    \end{split}
+                \end{equation*}
+                \item We can prove that this function is unique or not by substituting $f(x)=x-3$ into the function $g(x)$ and seeing if it is equal to the function $(g \circ f)(x)$.
+                \begin{equation*}
+                    \begin{split}
+                        g(x) &= x^2+3x \\
+                        g(f(x)) &= (x-3)^2+3(x-3) \\
+                        &= x^2-6x+9+3x-9 \\
+                        &= x^2-3x
+                    \end{split}
+                \end{equation*}
+            \end{itemize}
+        \end{tcolorbox}
 
 %% New Page
 \newpage        
@@ -284,10 +306,14 @@
                         \end{equation*}
                     \end{itemize}
                 \end{tcolorbox}
+\newpage 
             \item What is the limit of the sequence $a_n$ (if it exists)?
                 \begin{tcolorbox}
                     \begin{itemize}[label={}]
-                        \item To find the limit of the sequence $a_n$ we can use the formula.
+                        \item To find the limit of the sequence $a_n$ we can start by looking at the recursive definition.
+                        \item Since $a_n = a_{n-1} - \frac{1}{4}a_{n-2}$, we can tell that the sequence is dependent on two previous terms; $a_{n-1}$ and $a_{n-2}$.
+                        \item Because of this, the limit when $n$ approaches infinity will be dependent on the previous two terms.
+                        \item Since the previous terms will always be smaller than the current term and that the terms will get infinitely smaller, the limit of the sequence $a_n$ will be 0.
                     \end{itemize}
                 \end{tcolorbox}
         \end{enumerate}
@@ -302,13 +328,45 @@
         \end{equation*} for a given $A>0$. You can assume that all values of $b_n$ are non-zero.
         \begin{enumerate}
             \item Use your calculator (or MATLAB) to calculate the first four values of the sequence $b_n$ starting from $b_1=A$ (this is for $n=1,2,3,4$). Inspecting these values do you expect the sequence to be convergent or to be divergent?
-                \begin{itemize}[label={}]
-                    \item 
-                \end{itemize}
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item Given that A > 0, I expect the sequence to be convergent. This is because as n increases, the value of $b_n$ will approach the limit of the sequence.
+                        \item Substituting $n=1,2,3,4$ into the recursive definition:
+                        \begin{equation*}
+                            \begin{array}{r@{~=~}l}
+                                b_{1} & \frac{1}{2}\left(b_{1-1}+\frac{A}{b_{1-1}} \right) \\ [2ex]
+                                & \frac{1}{2}\left(b_{0}+\frac{A}{b_{0}} \right) \\ [2ex]
+                                & \frac{1}{2}\left(A+\frac{A}{A} \right) \\ [2ex]
+                                & \frac{1}{2}\left(A+1 \right) \\ [2ex]
+                                & \frac{A+1}{2} \\ [2ex]
+                                & \frac{A}{2}+\frac{1}{2} \\ [2ex]
+                            \end{array}
+                            \begin{array}{r@{~=~}l}
+                                b_{2} & \frac{1}{2}\left(b_{2-1}+\frac{A}{b_{2-1}} \right) \\ [2ex]
+                                & \frac{1}{2}\left(b_{1}+\frac{A}{b_{1}} \right) \\ [2ex]
+                                & \frac{1}{2}\left(\frac{A}{2}+\frac{1}{2}+\frac{A}{\frac{A}{2}+\frac{1}{2}} \right) \\ [2ex]
+                            \end{array}
+                        \end{equation*}
+                        \begin{equation*}
+                            \begin{array}{r@{~=~}l}
+                                b_{3} & \frac{1}{2}\left(b_{3-1}+\frac{A}{b_{3-1}} \right) \\ [2ex]
+                                & \frac{1}{2}\left(b_{2}+\frac{A}{b_{2}} \right) \\ [2ex]
+                                & \frac{1}{2}\left(\frac{A}{2}+\frac{1}{2}+\frac{A}{\frac{A}{2}+\frac{1}{2}} \right) \\ [2ex]
+                            \end{array}
+                            \begin{array}{r@{~=~}l}
+                                b_{4} & \frac{1}{2}\left(b_{4-1}+\frac{A}{b_{4-1}} \right) \\ [2ex]
+                                & \frac{1}{2}\left(b_{3}+\frac{A}{b_{3}} \right) \\ [2ex]
+                                & \frac{1}{2}\left(\frac{A}{2}+\frac{1}{2}+\frac{A}{\frac{A}{2}+\frac{1}{2}} \right) \\ [2ex]
+                            \end{array}
+                        \end{equation*}
+                    \end{itemize}
+                \end{tcolorbox}
             \item Assume you know the sequence $b_n$ is converging, what would be its limit (or its limits)? Justify your answer. Is it consistent with your result of part (a)?
-                \begin{itemize}[label={}]
-                    \item 
-                \end{itemize}
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item The limit is 1. Please show working.
+                    \end{itemize}
+                \end{tcolorbox}
         \end{enumerate}
 
 %% New Page
@@ -321,15 +379,53 @@
         \end{equation} for all $n=1,2,3,\dots$ for some fixed constant q with $0<q<1$.
         \begin{enumerate}
             \item Show that $c_n\to0$ for $n\to \infty$. (Hint: use the squeeze theorem)
-                \begin{itemize}[label={}]
-                    \item 
-                \end{itemize}
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item To show that the sequence $c_n$ converges to 0, we can use the squeeze theorem. We can start by rearranging the inequality:
+                        \begin{equation*}
+                            |c_n| \leq q|c_n-1|
+                        \end{equation*}
+                        \item Since we know that $0<q<1$, the absolute value of $c_n$ will always be less than the absolute value of $c_n-1$. This means that the sequence $c_n$ will always be squeezed between 0 and $q|c_n-1|$. Since $q|c_n-1|$ converges to 0, the sequence $c_n$ must also converge to 0. We can show this by using the squeeze theorem:
+                        \begin{equation*}
+                            |c_n| \leq q^n|c_{n-1}|
+                        \end{equation*}
+                        \item Since $q^n|c_{n-1}|$ converges to 0, the sequence $c_n$ must also converge to 0.
+                        \item Therefore the sequnce $c_n$ converges to 0 when $n\to \infty$.
+                    \end{itemize}
+                \end{tcolorbox}
             \item Use the result from part(a) to show that $\displaystyle{\lim_{n \to \infty}}\,\,\, \frac{2^n}{n!}=0$.
-                \begin{itemize}[label={}]
-                    \item 
-                \end{itemize}
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item Using the result from Part A, we can show that the $\displaystyle{\lim_{n \to \infty}}\,\,\, \frac{2^n}{n!}=0$.
+                        \item We can start by defining a new sequence $a_n$:
+                        \begin{equation*}
+                            a_n = \frac{2^n}{n!} \quad \text{ for } n=1,2,3,\dots
+                        \end{equation*}
+                        \item We then divide the sequence $a_n$ by $a_{n-1}$:
+                        \begin{equation*} \frac{a_n}{a_{n-1}} = \frac{\frac{2n}{n!}}{\frac{2{n-1}}{(n-1)!}} = \frac{2n(n-1)!}{n!2{n-1}} = \frac{2}{n} 
+                        \end{equation*}
+                        \item Since $\frac{2}{n} \leq 1$ for all $n \geq 2$, we can apply the result from part A to show that the sequence $a_n$ converges to 0 as $n$ approaches infinity.
+                    \end{itemize}
+                \end{tcolorbox}
             \item Again: use the result from part(a) to show that $\displaystyle{\lim_{n \to \infty}}\,\,\, \frac{1}{3^nn^3}=0$.
-        \end{enumerate}
+                    \begin{tcolorbox}
+                        \begin{itemize}[label={}]
+                            \item Similar to Part B, we can use the result from Part A to show that the $\displaystyle{\lim_{n \to \infty}}\,\,\, \frac{1}{3^nn^3}=0$.
+                            \item We can start by defining a new sequence $b_n$:
+                            \begin{equation*}
+                                b_n = \frac{1}{3^nn^3} \quad \text{ for } n=1,2,3,\dots
+                            \end{equation*}
+                            \item We then divide the sequence $b_n$ by $b_{n-1}$:
+                            \begin{equation*} \frac{b_n}{b_{n-1}} = \frac{\frac{1}{3^nn^3}}{\frac{1}{3{n-1}(n-1)3}} = \frac{(n-1)^3}{3n^3} = \frac{n^3-3n^2+3n-1}{3n^3} = \frac{1}{3} - \frac{1}{n} + \frac{1}{n^2} - \frac{1}{n^3} 
+                            \end{equation*}
+                            \item We now determine this limit:
+                            \begin{equation*}
+                                {\lim_{n \to \infty}}\,\,\, \frac{1}{3} - \frac{1}{n} + \frac{1}{n^2} - \frac{1}{n^3} = \frac{1}{3} - 0 + 0 - 0 = \frac{1}{3}
+                            \end{equation*}
+                            \item Since $\frac{1}{3} \leq 1$ for all $n \geq 2$, we can apply the result from part A to show that the sequence $b_n$ converges to 0 as $n$ approaches infinity.
+                        \end{itemize}
+                    \end{tcolorbox}
+        \end{enumerate} 
 
 
 \end{enumerate}

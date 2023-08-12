@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    language=Matlab,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green!70!black},
+    columns=fullflexible,
+    breaklines=true,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+\begin{document}
+\begin{lstlisting}
+A = 1; % Set the value of A
+N = 10; % Set the number of terms to generate
+b = zeros(N,1); % Preallocate the array to store the sequence
+b(1) = A; % Set the initial value of the sequence
+for n = 2:N
+    b(n) = 0.5*(b(n-1) + A/b(n-1)); % Calculate the next term of the sequence
+end
+% Write the data to a file
+fid = fopen('data.txt','w');
+fprintf(fid,'%d\n',b);
+fclose(fid);
+\end{lstlisting}
+\end{document}

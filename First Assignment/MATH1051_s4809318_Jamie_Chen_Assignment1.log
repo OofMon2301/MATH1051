@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  7 AUG 2023 12:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  12 AUG 2023 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,67 +680,90 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+))) (c:/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count328
+\lst@gtempboxa=\box74
+\lst@token=\toks52
+\lst@length=\count329
+\lst@currlwidth=\dimen286
+\lst@column=\count330
+\lst@pos=\count331
+\lst@lostspace=\dimen287
+\lst@width=\dimen288
+\lst@newlines=\count332
+\lst@lineno=\count333
+\lst@maxwidth=\dimen289
+ (c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count334
+\lst@skipnumbers=\count335
+\lst@framebox=\box75
+) (c:/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (c:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.0.1'
-\c@tcbrastercolumn=\count328
-\c@tcbrasterrow=\count329
-\c@tcbrasternum=\count330
-\c@tcbraster=\count331
+\c@tcbrastercolumn=\count336
+\c@tcbrasterrow=\count337
+\c@tcbrasternum=\count338
+\c@tcbraster=\count339
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.external.code.tex (c:/texlive/2022/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex)))
 \openout3 = `MATH1051_s4809318_Jamie_Chen_Assignment1.auxlock'.
 
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 29.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 43.
  (c:/texlive/2022/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 29.
+(Font)              scaled to size 12.0pt on input line 43.
  (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count332
-\l__pdf_internal_box=\box74
-)
-No file MATH1051_s4809318_Jamie_Chen_Assignment1.aux.
+\l__color_backend_stack_int=\count340
+\l__pdf_internal_box=\box76
+) (./MATH1051_s4809318_Jamie_Chen_Assignment1.aux)
 \openout1 = `MATH1051_s4809318_Jamie_Chen_Assignment1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 29.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 29.
-(c:/texlive/2022/texmf-dist/tex/latex/newtx/omlntxmi.fd
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 43.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 43.
+ (c:/texlive/2022/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 29.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 29.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 43.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 43.
  (c:/texlive/2022/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 29.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 29.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 43.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 43.
  (c:/texlive/2022/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 29.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 29.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 43.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 43.
  (c:/texlive/2022/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -750,15 +773,15 @@ LaTeX Font Info:    ... okay on input line 29.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(113.81102pt, 386.67296pt, 113.81102pt)
-* v-part:(T,H,B)=(113.81102pt, 567.34795pt, 113.81102pt)
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=386.67296pt
-* \textheight=567.34795pt
-* \oddsidemargin=41.54103pt
-* \evensidemargin=41.54103pt
-* \topmargin=4.54103pt
+* \textwidth=443.57848pt
+* \textheight=624.25346pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -776,27 +799,28 @@ LaTeX Font Info:    ... okay on input line 29.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 29.
-LaTeX Info: Command `\ddddot' is already robust on input line 29.
-\c@mv@tabular=\count333
-\c@mv@boldtabular=\count334
-Package hyperref Info: Link coloring ON on input line 29.
+LaTeX Info: Command `\dddot' is already robust on input line 43.
+LaTeX Info: Command `\ddddot' is already robust on input line 43.
+\c@mv@tabular=\count341
+\c@mv@boldtabular=\count342
+Package hyperref Info: Link coloring ON on input line 43.
+(./MATH1051_s4809318_Jamie_Chen_Assignment1.out) (./MATH1051_s4809318_Jamie_Chen_Assignment1.out)
 \@outlinefile=\write4
 \openout4 = `MATH1051_s4809318_Jamie_Chen_Assignment1.out'.
 
-(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count335
-\scratchdimen=\dimen286
-\scratchbox=\box75
-\nofMPsegments=\count336
-\nofMParguments=\count337
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count338
-\MPscratchDim=\dimen287
-\MPnumerator=\count339
-\makeMPintoPDFobject=\count340
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count343
+\scratchdimen=\dimen290
+\scratchbox=\box77
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen291
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks54
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -805,93 +829,82 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
+\c@lstlisting=\count349
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 31.
+(Font)              scaled to size 20.74pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 31.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 31.
+(Font)              scaled to size 14.4pt on input line 45.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 45.
 (c:/texlive/2022/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 31.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 45.
  (c:/texlive/2022/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 31.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 45.
  (c:/texlive/2022/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 31.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 45.
  (c:/texlive/2022/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 31.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 45.
  (c:/texlive/2022/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
 File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 14.4pt on input line 31.
+(Font)              scaled to size 14.4pt on input line 45.
  [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 34.
+(Font)              scaled to size 12.0pt on input line 48.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 \newpage
+l.71 \newpage
               [1] [2] [3]
-
-c:/Users/jamie/OneDrive/2023/MATH1051/First Assignment/MATH1051_s4809318_Jamie_Chen_Assignment1.tex:108: Package pgfkeys Error: I do not know the key '/tcb/adjusted' and I am going to ignore it. Perhaps you misspelled it.
-
-See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108                 \begin{tcolorbox}[adjusted]
-                                                 
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
 <lib/figures/Figure1.pdf, id=38, 210.55464pt x 162.3947pt>
 File: lib/figures/Figure1.pdf Graphic file (type pdf)
 <use lib/figures/Figure1.pdf>
-Package pdftex.def Info: lib/figures/Figure1.pdf  used on input line 123.
-(pdftex.def)             Requested size: 214.74162pt x 165.62799pt.
-[4 <./lib/figures/Figure1.pdf>] [5] [6] [7] [8] [9] (./MATH1051_s4809318_Jamie_Chen_Assignment1.aux)
-
-Package rerunfilecheck Warning: File `MATH1051_s4809318_Jamie_Chen_Assignment1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MATH1051_s4809318_Jamie_Chen_Assignment1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package pdftex.def Info: lib/figures/Figure1.pdf  used on input line 145.
+(pdftex.def)             Requested size: 260.2662pt x 200.75526pt.
+ [4 <./lib/figures/Figure1.pdf>] [5]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 215.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 215.
+ [6]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 243.
+ [7] [8] [9] [10] [11] [12] (./MATH1051_s4809318_Jamie_Chen_Assignment1.aux)
+Package rerunfilecheck Info: File `MATH1051_s4809318_Jamie_Chen_Assignment1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36858 strings out of 476024
- 841093 string characters out of 5794017
- 1859382 words of memory out of 5000000
- 56653 multiletter control sequences out of 15000+600000
- 552407 words of font info for 124 fonts, out of 8000000 for 9000
+ 38304 strings out of 476024
+ 862323 string characters out of 5794017
+ 1870382 words of memory out of 5000000
+ 58067 multiletter control sequences out of 15000+600000
+ 566820 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,18n,89p,815b,898s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,18n,89p,810b,889s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on MATH1051_s4809318_Jamie_Chen_Assignment1.pdf (10 pages, 169807 bytes).
+Output written on MATH1051_s4809318_Jamie_Chen_Assignment1.pdf (13 pages, 184024 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
