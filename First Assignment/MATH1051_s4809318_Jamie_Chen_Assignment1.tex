@@ -205,6 +205,7 @@
                             & \infty
                         \end{array}
                     \end{equation*}
+                    Therefore the limit does not exist when $n \rightarrow \infty$.
                 \end{tcolorbox}
             \item $\lim \limits_{n\rightarrow \infty} \frac{3n^2-9n + 48}{4n^3}$
                 \begin{tcolorbox}
@@ -330,41 +331,53 @@
             \item Use your calculator (or MATLAB) to calculate the first four values of the sequence $b_n$ starting from $b_1=A$ (this is for $n=1,2,3,4$). Inspecting these values do you expect the sequence to be convergent or to be divergent?
                 \begin{tcolorbox}
                     \begin{itemize}[label={}]
-                        \item Given that A > 0, I expect the sequence to be convergent. This is because as n increases, the value of $b_n$ will approach the limit of the sequence.
+                        \item Given that A $>$ 0, I expect the sequence to be convergent. This is because as n increases, the value of $b_n$ will approach the limit of the sequence.
                         \item Substituting $n=1,2,3,4$ into the recursive definition:
                         \begin{equation*}
                             \begin{array}{r@{~=~}l}
-                                b_{1} & \frac{1}{2}\left(b_{1-1}+\frac{A}{b_{1-1}} \right) \\ [2ex]
-                                & \frac{1}{2}\left(b_{0}+\frac{A}{b_{0}} \right) \\ [2ex]
+                                b_{1} & A \\ [2ex]
+                                b_{2} & \frac{1}{2}\left(b_{1}+\frac{A}{b_{1}} \right) \\ [2ex]
                                 & \frac{1}{2}\left(A+\frac{A}{A} \right) \\ [2ex]
                                 & \frac{1}{2}\left(A+1 \right) \\ [2ex]
                                 & \frac{A+1}{2} \\ [2ex]
                                 & \frac{A}{2}+\frac{1}{2} \\ [2ex]
                             \end{array}
                             \begin{array}{r@{~=~}l}
-                                b_{2} & \frac{1}{2}\left(b_{2-1}+\frac{A}{b_{2-1}} \right) \\ [2ex]
-                                & \frac{1}{2}\left(b_{1}+\frac{A}{b_{1}} \right) \\ [2ex]
+                                b_{3} & \frac{1}{2}\left(b_{2}+\frac{A}{b_{2}} \right) \\ [2ex]
                                 & \frac{1}{2}\left(\frac{A}{2}+\frac{1}{2}+\frac{A}{\frac{A}{2}+\frac{1}{2}} \right) \\ [2ex]
-                            \end{array}
-                        \end{equation*}
-                        \begin{equation*}
-                            \begin{array}{r@{~=~}l}
-                                b_{3} & \frac{1}{2}\left(b_{3-1}+\frac{A}{b_{3-1}} \right) \\ [2ex]
-                                & \frac{1}{2}\left(b_{2}+\frac{A}{b_{2}} \right) \\ [2ex]
-                                & \frac{1}{2}\left(\frac{A}{2}+\frac{1}{2}+\frac{A}{\frac{A}{2}+\frac{1}{2}} \right) \\ [2ex]
-                            \end{array}
-                            \begin{array}{r@{~=~}l}
-                                b_{4} & \frac{1}{2}\left(b_{4-1}+\frac{A}{b_{4-1}} \right) \\ [2ex]
-                                & \frac{1}{2}\left(b_{3}+\frac{A}{b_{3}} \right) \\ [2ex]
+                                b_{4} & \frac{1}{2}\left(b_{3}+\frac{A}{b_{3}} \right) \\ [2ex]
                                 & \frac{1}{2}\left(\frac{A}{2}+\frac{1}{2}+\frac{A}{\frac{A}{2}+\frac{1}{2}} \right) \\ [2ex]
                             \end{array}
                         \end{equation*}
                     \end{itemize}
                 \end{tcolorbox}
+\newpage
             \item Assume you know the sequence $b_n$ is converging, what would be its limit (or its limits)? Justify your answer. Is it consistent with your result of part (a)?
                 \begin{tcolorbox}
                     \begin{itemize}[label={}]
-                        \item The limit is 1. Please show working.
+                        \item We can show this by using the recursive definition:
+                        \item Because the sequence is increasing and bounded above, we can find the limit and equality of the sequence by solving the equation:
+                        \item Let $L$ be the limit of the sequence $b_n$:
+                        \begin{equation*}
+                            L=\frac{1}{2}\left(L+\frac{A}{L} \right)
+                        \end{equation*}
+                        \item Multiplying both sides by 2:
+                        \begin{equation*}
+                            2L=L+\frac{A}{L}
+                        \end{equation*}
+                        \item Subtracting $L$ from both sides:
+                        \begin{equation*}
+                            L=\frac{A}{L}
+                        \end{equation*}
+                        \item Multiplying both sides by $L$:
+                        \begin{equation*}
+                            L^2=A
+                        \end{equation*}
+                        \item Taking the square root of both sides:
+                        \begin{equation*}
+                            L=\pm \sqrt{A}
+                        \end{equation*}
+                        \item Since $A>0$, we know that the Limit will be at $L=\sqrt{A}$.
                     \end{itemize}
                 \end{tcolorbox}
         \end{enumerate}
@@ -375,7 +388,7 @@
 
     \item {\bf (1 mark each)} Assume you have given a sequence $c_n$ with non-zero values ($c_n\neq0$ for $n=1,2,\dots$) that fulfils the condition
         \begin{equation}
-            \left|\frac{c_n}{c_n-1}\right|\leq q
+            \left|\frac{c_n}{c_{n-1}}\right|\leq q
         \end{equation} for all $n=1,2,3,\dots$ for some fixed constant q with $0<q<1$.
         \begin{enumerate}
             \item Show that $c_n\to0$ for $n\to \infty$. (Hint: use the squeeze theorem)
@@ -393,6 +406,7 @@
                         \item Therefore the sequnce $c_n$ converges to 0 when $n\to \infty$.
                     \end{itemize}
                 \end{tcolorbox}
+\newpage
             \item Use the result from part(a) to show that $\displaystyle{\lim_{n \to \infty}}\,\,\, \frac{2^n}{n!}=0$.
                 \begin{tcolorbox}
                     \begin{itemize}[label={}]
@@ -402,11 +416,31 @@
                             a_n = \frac{2^n}{n!} \quad \text{ for } n=1,2,3,\dots
                         \end{equation*}
                         \item We then divide the sequence $a_n$ by $a_{n-1}$:
-                        \begin{equation*} \frac{a_n}{a_{n-1}} = \frac{\frac{2n}{n!}}{\frac{2{n-1}}{(n-1)!}} = \frac{2n(n-1)!}{n!2{n-1}} = \frac{2}{n} 
+                        \begin{equation*} \frac{a_n}{a_{n-1}} = \frac{\frac{2^n}{n!}}{\frac{2^{n-1}}{(n-1)!}}
+                        \end{equation*}
+                        \item We can then simplify the equation:
+                        \begin{equation*}
+                           = \frac{2^n}{n!} \times \frac{(n-1)!}{2^{n-1}}
+                        \end{equation*}
+                        \item We can then cancel out the $2^{n-1}$ and $(n-1)!$:
+                        \begin{equation*}
+                            = \frac{2^n}{n \times (n-1)!} \times \frac{(n-1)!}{2^{n-1}}
+                        \end{equation*}
+                        \begin{equation*}
+                            =\frac{2^n}{n} \times \frac{1}{2^{n-1}}
+                        \end{equation*}
+                        \item We can then simplify the equation:
+                        \begin{equation*}
+                            =\frac{2 \times 2^{n-1}}{n} \times \frac{1}{2^{n-1}}
+                        \end{equation*}
+                        \item We can now cancel out the $2^{n-1}$:
+                        \begin{equation*}
+                            =\frac{2}{n}
                         \end{equation*}
                         \item Since $\frac{2}{n} \leq 1$ for all $n \geq 2$, we can apply the result from part A to show that the sequence $a_n$ converges to 0 as $n$ approaches infinity.
                     \end{itemize}
                 \end{tcolorbox}
+\newpage
             \item Again: use the result from part(a) to show that $\displaystyle{\lim_{n \to \infty}}\,\,\, \frac{1}{3^nn^3}=0$.
                     \begin{tcolorbox}
                         \begin{itemize}[label={}]
@@ -416,7 +450,19 @@
                                 b_n = \frac{1}{3^nn^3} \quad \text{ for } n=1,2,3,\dots
                             \end{equation*}
                             \item We then divide the sequence $b_n$ by $b_{n-1}$:
-                            \begin{equation*} \frac{b_n}{b_{n-1}} = \frac{\frac{1}{3^nn^3}}{\frac{1}{3{n-1}(n-1)3}} = \frac{(n-1)^3}{3n^3} = \frac{n^3-3n^2+3n-1}{3n^3} = \frac{1}{3} - \frac{1}{n} + \frac{1}{n^2} - \frac{1}{n^3} 
+                            \begin{equation*} \frac{b_n}{b_{n-1}} = \frac{\frac{1}{3^nn^3}}{\frac{1}{3^{n-1}(n-1)^3}} 
+                            \end{equation*}
+                            \item Simplify by reciprocating the denominator and multiplying by the numerator:
+                            \begin{equation*}
+                                = \frac{1}{3^nn^3} \times \frac{3^{n-1}(n-1)^3}{1}
+                            \end{equation*}
+                            \item Simplify further:
+                            \begin{equation*}
+                               \frac{1}{n^3} \times \frac{(n-1)^3}{1} = \frac{(n-1)^3}{3n^3} = \frac{n^3-3n^2+3n-1}{3n^3} 
+                            \end{equation*}
+                            \item We can then divide the numerator and denominator by $n^3$:
+                            \begin{equation*}
+                                = \frac{1}{3} - \frac{1}{n} + \frac{1}{n^2} - \frac{1}{n^3}
                             \end{equation*}
                             \item We now determine this limit:
                             \begin{equation*}
