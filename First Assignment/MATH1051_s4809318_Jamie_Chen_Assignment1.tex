@@ -109,18 +109,18 @@
                             A function $f: X\to Y$ is called {\bf one-to-one} (or {\bf injective}) if $\forall x_1,x_2 \in \mathbb{R} \cap X$, $f(x_1)=f(x_2)$ $\implies$ $x_1=x_2$.
                         \end{quote}
                         \item
-                        \item The function $f_1(x)=e^{-x^2}$ is one-to-one as it is a strictly decreasing function. Additionally, if we follow the definition of a one-to-one function:
+                        \item The function $f_1(x)=e^{-x^2}$ is not one-to-one as it is not a strictly decreasing function or strictly increasing function. Additionally, if we follow the definition of a one-to-one function:
                         \begin{equation*}
                             \begin{split}
                                 f_1(x_1) &= f_1(x_2) \\
                                 e^{-x_1^2} &= e^{-x_2^2} \\
-                                \ln (e^{-x_1^2}) &= \ln (e^{-x_2^2}) \\
+                                \ln e^{-x_1^2} &= \ln e^{-x_2^2} \\
                                 -x_1^2 &= -x_2^2 \\
                                 x_1^2 &= x_2^2 \\
-                                \implies x_1 &= x_2
+                                x_1 &= \pm x_2
                             \end{split}
                         \end{equation*}
-                        \item Therefore, the function $f_1(x)=e^{-x^2}$ is one-to-one.
+                        \item Therefore, the function $f_1(x)=e^{-x^2}$ is not one-to-one.
                         
                     \end{itemize}
                 \end{tcolorbox}
@@ -159,9 +159,18 @@
                                 |x_1|+2 \cdot x_1 & |x_2|+2 \cdot x_2 \\ [2ex]
                             \end{array}
                         \end{equation*}
+                        \item There are four cases that we need to consider:
+                        \item The first case is when $x_1,x_2 < 0$, the second case is when $x_1,x_2 \geq 0$, the third case is when $x_1 < 0$ and $x_2 \geq 0$, and the fourth case is when $x_1 \geq 0$ and $x_2 < 0$.
+                        \item There are two cases in which that they are arbitrary, and two cases in which they are not arbitrary. 
+                        \item The two cases in which they are arbitrary are the third and fourth cases.
                         \item In this case, lets consider that there are two cases:
                         \item The first case is when $x_1,x_2 \geq 0$:
                         \item In this case, we can assume that $|x_1|=x_1$ and $|x_2|=x_2$. We can then determine the equation for this case:
+                    \end{itemize}
+                \end{tcolorbox}
+                \begin{tcolorbox}
+                    \begin{itemize}[label={}]
+                        \item
                         \begin{equation*}
                             |x_1|+2 \cdot x_1 = |x_2|+2 \cdot x_2
                         \end{equation*}
@@ -500,7 +509,7 @@
                         \begin{equation*}
                             =\frac{2}{n}
                         \end{equation*}
-                        \item Since $\frac{2}{n} \leq 1$ for all $n \geq 2$, we can apply the result from part A to show that the sequence $a_n$ converges to 0 as $n$ approaches infinity.
+                        \item Since $\frac{2}{n} \leq 1$ for all $n \geq 3$, we can apply the result from part A to show that the sequence $a_n$ converges to 0 as $n$ approaches infinity.
                     \end{itemize}
                 \end{tcolorbox}
 \newpage
