@@ -1,0 +1,315 @@
+\documentclass[12pt]{article}
+\usepackage[paper=letterpaper,margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{newtxtext, newtxmath}
+\usepackage{enumitem}
+\usepackage{titling}
+\usepackage{calculator}
+\usepackage[colorlinks=true]{hyperref}
+
+\setlength{\droptitle}{-6em}
+
+% Enter the specific assignment number and topic of that assignment below, and replace "Your Name" with your actual name.
+\title{Assignment \# 2: MATH1051}
+\author{Jamie Chen\\ \text{Student Number:} \texttt{48093189} \\ \text{Semester 2, 2023}}
+\date{\today}
+
+\begin{document}
+\maketitle
+% Question 1
+\section*{Question 1}
+\begin{enumerate}[leftmargin=\labelsep]
+    \item Determine if the series are divergent or are absolutely or conditionally convergent:
+
+    % Question 1a
+
+    \begin{enumerate}
+        \item $\displaystyle{\sum_{n=0}^{\infty} \frac{1}{({n^2+1})^{3/2}}}$
+        \begin{itemize}[label={}]
+            \item 
+            \item This series is convergent by the comparison test. We can compare this series to the series $\displaystyle{\sum_{n=0}^{\infty} \frac{1}{n^3}}$ which is a convergent p-series. Since $\displaystyle{\frac{1}{({n^2+1})^{3/2}} \leq \frac{1}{n^3}}$ for all $n \geq 1$, by the comparison test, the series is convergent.
+            \item 
+        \end{itemize}
+
+    % Question 1b
+
+        \item $\displaystyle{\sum_{n=0}^{\infty} \frac{2^{\sqrt{n}}}{3^n}}$
+        \begin{itemize}[label={}]
+            \item
+            \item This series is divergent by the root test. We can use the root test to determine the convergence of this series. We can see that $\displaystyle{\lim_{n \to \infty} \sqrt[n]{\frac{2^{\sqrt{n}}}{3^n}} = \frac{2}{3}}$. Since $\displaystyle{\frac{2}{3} > 1}$, by the root test, the series is divergent.
+            \item 
+        \end{itemize}
+
+    % Question 1c
+
+        \item $\displaystyle{\sum_{n=0}^{\infty} (-1)^n \frac{\ln (n)}{n}}$
+        \begin{itemize}[label={}]
+            \item 
+            \item This series is conditionally convergent by the alternating series test. We can use the alternating series test to determine the convergence of this series. We can see that $\displaystyle{\lim_{n \to \infty} \frac{\ln (n)}{n} = 0}$. Since $\displaystyle{\frac{\ln (n)}{n}}$ is a decreasing function for all $n \geq 1$, by the alternating series test, the series is conditionally convergent.
+            \item 
+        \end{itemize}
+
+    \end{enumerate}
+
+    \newpage 
+    % Question 2
+    \section*{Question 2}
+    \item Determine the radius of convergence.
+    
+    % Please add working out with the solution
+
+    \begin{enumerate}
+        % Question 2a
+
+
+        \item $\displaystyle{\sum_{n=0}^{\infty} (2n+1)(2x)^{2n}}$
+        \begin{itemize}[label={}]
+            \item We can calculate the radius of convergence by using the ratio test. We can see that
+            \item $\displaystyle{\lim_{n \to \infty} \left| \frac{(2n+3)(2x)^{2n+2}}{(2n+1)(2x)^{2n}} \right| = \lim_{n \to \infty} \left| \frac{(2n+3)(2x)^2}{(2n+1)} \right| = 4x^2}$. Since $\displaystyle{\lim_{n \to \infty} \left| \frac{(2n+3)(2x)^{2n+2}}{(2n+1)(2x)^{2n}} \right| = 4x^2}$, we can calculate the radius of convergence by $\displaystyle{\frac{1}{4x^2} < 1}$. Therefore, the radius of convergence is $\displaystyle{\frac{1}{2}}$. 
+        \end{itemize}
+
+        % Question 2b
+
+        \item $\displaystyle{\sum_{n=0}^{\infty} n! x^n}$
+        \begin{itemize}[label={}]
+            \item We can calculate the radius of convergence by using the ratio test. We can see that
+            \item $\displaystyle{\lim_{n \to \infty} \left| \frac{(n+1)! x^{n+1}}{n! x^n} \right| = \lim_{n \to \infty} \left| (n+1) x \right| = \infty}$. Since $\displaystyle{\lim_{n \to \infty} \left| \frac{(n+1)! x^{n+1}}{n! x^n} \right| = \infty}$, we can calculate the radius of convergence by $\displaystyle{\frac{1}{\infty} < 1}$. Therefore, the radius of convergence is $\displaystyle{\infty}$.
+        \end{itemize}
+
+    \end{enumerate}
+
+    \newpage
+    % Question 3
+
+    \section*{Question 3}
+
+    \item Calculate the following indefinite integrals:
+    \begin{enumerate}
+        % Question 3a
+        \item $\displaystyle{\int x \sqrt{1-x^2} \, dx}$
+        \begin{itemize}[label={}]
+            \item We can integrate by substitution. We can let $u = 1-x^2$.
+            \begin{equation*}
+                \begin{array}{r@{~=~}l}
+                    \displaystyle{\frac{du}{dx}} & \displaystyle{-2x} \\
+                    \displaystyle{du} & \displaystyle{-2x \, dx} \\
+                \end{array}
+            \end{equation*}
+            \item We can substitute $u$ and $du$ into the integral.
+            \begin{equation*}
+                \begin{split}
+                    \int x \sqrt{1-x^2} \, dx &= \int \sqrt{u} \, du \\
+                    &= \frac{2}{3} u^{3/2} + C \\
+                    &= \frac{2}{3} (1-x^2)^{3/2} + C \\
+                \end{split}
+            \end{equation*}
+        \end{itemize}
+
+        % Question 3b
+        \item $\displaystyle{\int \sqrt{x} \, \ln(x^2) \, dx}$
+        \begin{itemize}[label={}]
+            \item We can integrate by parts. We can let $u = \ln(x^2)$ and $dv = \sqrt{x} \, dx$.
+            \begin{equation*}
+                \begin{split}
+                    \displaystyle{\frac{du}{dx}} &= \displaystyle{\frac{2}{x}} \\
+                    \displaystyle{du} &= \displaystyle{\frac{2}{x} \, dx} \\
+                    \displaystyle{v} &= \displaystyle{\frac{2}{3} x^{3/2}} \\
+                    \displaystyle{dv} &= \displaystyle{\sqrt{x} \, dx} \\
+                \end{split}
+            \end{equation*}
+            \item We can substitute $u$, $du$, $v$ and $dv$ into the integral.
+            \begin{equation*}
+                \displaystyle{\int \sqrt{x} \, \ln(x^2) \, dx = \frac{2}{3} x^{3/2} \ln(x^2) - \int \frac{2}{3} x^{3/2} \frac{2}{x} \, dx}
+            \end{equation*}
+            \item We can then simplify the integral and solve for the original integral.
+            \begin{equation*}
+                \begin{split}
+                    \displaystyle{\int \sqrt{x} \, \ln(x^2) \, dx} &= \displaystyle{\frac{2}{3} x^{3/2} \ln(x^2) - \int \frac{4}{3} x^{1/2} \, dx} \\
+                    &= \displaystyle{\frac{2}{3} x^{3/2} \ln(x^2) - \frac{8}{15} x^{5/2} + C} \\
+                \end{split}
+            \end{equation*}
+        \end{itemize}
+    
+        \newpage
+
+        % Question 3c
+        \item $\displaystyle{\int \frac{x^2}{x^2+6x+8} \, dx}$
+        \begin{itemize}[label={}]
+            \item
+        \end{itemize}
+    \end{enumerate}
+
+    \newpage
+    % Question 4
+
+    \section*{Question 4}
+
+    \item The development of the population $P$ in specific small city is analysed. The investigation
+    revealed that the rate of the change of population per year can be modeled as:
+    \begingroup
+    % Make math size larger
+    \large
+    \begin{equation*}
+        P'(t) = \frac{10000}{(t+2)^2}
+    \end{equation*}
+    \endgroup
+    where $t$ is the time in years $t$ from today. What is the expected difference from today’s population
+    in the long run (this is for $t \to \infty$)?
+    \begin{itemize}[label={}]
+        \item We can find the expected difference from today's population by integrating the rate of change of population per year. First, we can integrate this function:
+        \begin{equation*}
+            \begin{split}
+                \int P'(t) \, dt &= \int \frac{10000}{(t+2)^2} \, dt \\
+            \end{split}
+        \end{equation*}
+        \item We then can find the difference using limits as $t \to \infty$.
+        \begin{equation*}
+            \begin{split}
+                \lim_{t \to \infty} \int P'(t) \, dt &= \lim_{t \to \infty} \int \frac{10000}{(t+2)^2} \, dt \\
+                &= \lim_{t \to \infty} \left[ \frac{-10000}{t+2} \right] \\
+                &= 0 \\
+            \end{split}
+        \end{equation*}
+    \end{itemize}
+
+    \newpage
+    % Question 5
+
+    \section*{Question 5}
+
+    \item Find the area of the region bounded by the curved $y=x^2-1$ and $y=2x+2$.
+    \begin{itemize}[label={}]
+        \item We can find the area of the region bounded by the curves by integrating the difference between the two curves. First, we can find the intersection points of the two curves.
+        \item To find the intersection points, we can make each function equal to each other.
+        \begin{equation*}
+            \begin{split}
+                x^2-1 &= 2x+2 \\
+                x^2-2x-3 &= 0 \\
+                (x-3)(x+1) &= 0 \\
+                x &= 3, -1 \\
+            \end{split}
+        \end{equation*}
+        % Find intersection y values
+        \begin{equation*}
+            \begin{split}
+                y &= (3)^2-1 \\
+                &= 8 \\
+                y &= (-1)^2-1 \\
+                &= 0 \\
+            \end{split}
+        \end{equation*}
+        So the intersection points are $(3,8)$ and $(-1,0)$.
+        \item Now that we have found the intersection points, we can integrate the difference between the two curves.
+        \item We can integrate the difference between the two curves from $x=-1$ to $x=3$.
+        \begin{equation*}
+            \begin{split}
+                \int_{-1}^{3} (2x+2)-(x^2-1) \, dx &= \int_{-1}^{3} 2x+2-x^2+1 \, dx \\
+                &= \left[ x^2 + 2x - \frac{x^3}{3} + x \right]_{-1}^{3} \\
+                &= \left[ \frac{8}{3} + 8 - \frac{27}{3} + 3 - \left( 1 + 2 + \frac{1}{3} - 1 \right) \right] \\
+                &= \frac{8}{3} + 8 - \frac{27}{3} + 3 - 1 - 2 - \frac{1}{3} + 1 \\
+                &= 2.333 \\
+            \end{split}
+        \end{equation*}
+        \item Therefore, the area of the region bounded by the curves is $2.333$ units squared.
+    \end{itemize}
+
+    \newpage
+    % Question 6
+
+    \section*{Question 6}
+
+    \item Calculate the volume of the solid of revolution that is formed by revolving the curve $y=2+\sin (x)$ over the interval $[0, 2\pi]$ around the $x$-axis.
+    \begin{itemize}[label={}]
+        \item To calculate the volume of the trigonometric solid of revolution, we can use the formula:
+        \begin{equation*}
+            \displaystyle{V = \pi \int_{a}^{b} (f(x))^2 \, dx}
+        \end{equation*}
+        \item We can substitute the values into the formula.
+        \begin{equation*}
+            \begin{split}
+                V &= \pi \int_{0}^{2\pi} (2+\sin (x))^2 \, dx \\
+                &= \pi \int_{0}^{2\pi} 4 + 4\sin (x) + \sin^2 (x) \, dx \\
+                &= \pi \int_{0}^{2\pi} 4 + 4\sin (x) + \frac{1}{2} - \frac{1}{2} \cos (2x) \, dx \\
+                &= \pi \left[ 4x - 4\cos (x) - \frac{1}{2} x + \frac{1}{4} \sin (2x) \right]_{0}^{2\pi} \\
+                &= \pi \left[ 8\pi - 4 - \frac{1}{2} 2\pi + \frac{1}{4} 0 \right] \\
+                &= \pi \left[ 8\pi - 4 - \pi \right] \\
+                &= \pi \left[ 7\pi - 4 \right] \\
+                &= 21.991 \\
+            \end{split}
+        \end{equation*}
+        \item Therefore, the volume of the solid of revolution is $21.991$ units cubed.
+    \end{itemize}
+
+    \newpage
+    % Question 7
+
+    \section*{Question 7}
+    
+    \item Consider the function $f$ defined on $\mathbb{R}$ that fulfils the following conditions:
+    \begin{equation*}
+        f'(x) = D \cdot f(x) \text{ for all } x \in \mathbb{R} \text{ and } f(0) = f_0
+    \end{equation*}
+    where $D$ and $f_0$ are given non-zero constants. This type of equation arises in many applications when modelling decay $(D>0)$ or growth $(D<0)$. Your task is to find $f$.
+    
+    % Question 7a
+    
+    \begin{enumerate}
+        \item Calculate the coefficients $c_n$ of the power series representation:
+        \begin{equation*}
+            f(x) = \sum_{n=0}^{\infty} c_n x^n
+        \end{equation*}
+        of the solution $f$.
+        \begin{itemize}[label={}]
+            \item To find and calculate the coefficients of the power series representation, we can use the formula:
+            \begin{equation*}
+                c_n = \frac{f^{(n)}(0)}{n!}
+            \end{equation*}
+            \item We can find the first derivative of $f(x)$.
+            \item 
+        \end{itemize}
+
+        % Question 7b
+
+        \item Calculate the radius of convergence of the power series of part (b).
+        \begin{itemize}[label={}]
+            \item To calculate the radius of convergence, we can use the ratio test. We can see that
+            \item $\displaystyle{\lim_{n \to \infty} \left| \frac{c_{n+1} x^{n+1}}{c_n x^n} \right| = \lim_{n \to \infty} \left| \frac{c_{n+1}}{c_n} x \right| = \lim_{n \to \infty} \left| \frac{D c_n}{c_n} x \right| = \lim_{n \to \infty} \left| D x \right|}$. Since $\displaystyle{\lim_{n \to \infty} \left| D x \right|}$, we can calculate the radius of convergence by $\displaystyle{\frac{1}{D x} < 1}$. Therefore, the radius of convergence is $\displaystyle{\frac{1}{D}}$.
+        \end{itemize}
+
+        % Question 7c
+
+        \item Use the Taylor series for the exponential function $e^t$ to derive the Taylor series of the function $g(x)=f_0e^{Dx}$ and compare the result with the power series you obtained in
+        part (a).
+        \begin{itemize}[label={}]
+            \item We can start off by finding the Taylor series of the exponential function $e^t$.
+            \begin{equation*}
+                \begin{split}
+                    e^t &= \sum_{n=0}^{\infty} \frac{t^n}{n!} \\
+                    &= 1 + t + \frac{t^2}{2!} + \frac{t^3}{3!} + \frac{t^4}{4!} + \cdots \\
+                \end{split}
+            \end{equation*}
+            We can then use this Taylor series to find the Taylor series of the function $g(x)$.
+            \begin{equation*}
+                \begin{split}
+                    g(x) &= f_0 e^{Dx} \\
+                    &= f_0 \sum_{n=0}^{\infty} \frac{(Dx)^n}{n!} \\
+                    &= f_0 \left( 1 + Dx + \frac{(Dx)^2}{2!} + \frac{(Dx)^3}{3!} + \frac{(Dx)^4}{4!} + \cdots \right) \\
+                    &= f_0 + f_0 Dx + \frac{f_0 (Dx)^2}{2!} + \frac{f_0 (Dx)^3}{3!} + \frac{f_0 (Dx)^4}{4!} + \cdots \\
+                \end{split}
+            \end{equation*}
+            With this, we can see that the Taylor series of the function $g(x)$ is the same as the power series we obtained in part (a).
+        \end{itemize}
+    \end{enumerate}
+
+    
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}
