@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  3 OCT 2023 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.2)  10 OCT 2023 11:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -560,28 +560,28 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 22.
  [1
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7]
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 252.
+(Font)              scaled to size 8.8pt on input line 169.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 252.
- [8] (./MATH1051_s4809318_JamieChen_Assignment_2.aux)
+(Font)              scaled to size 6.6pt on input line 169.
+ [4] [5] [6] [7] [8] [9] (./MATH1051_s4809318_JamieChen_Assignment_2.aux)
 Package rerunfilecheck Info: File `MATH1051_s4809318_JamieChen_Assignment_2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13830 strings out of 476024
- 206885 string characters out of 5794017
- 1867382 words of memory out of 5000000
+ 13835 strings out of 476024
+ 206930 string characters out of 5794017
+ 1871382 words of memory out of 5000000
  34012 multiletter control sequences out of 15000+600000
- 554887 words of font info for 131 fonts, out of 8000000 for 9000
+ 556590 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,76p,594b,731s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on MATH1051_s4809318_JamieChen_Assignment_2.pdf (8 pages, 126499 bytes).
+Output written on MATH1051_s4809318_JamieChen_Assignment_2.pdf (9 pages, 131099 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 34 named destinations out of 1000 (max. 500000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 35 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
