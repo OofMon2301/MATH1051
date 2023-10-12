@@ -7,6 +7,7 @@
 \usepackage{enumitem}
 \usepackage{titling}
 \usepackage{calculator}
+\usepackage{polynom}
 \usepackage[colorlinks=true]{hyperref}
 
 \setlength{\droptitle}{-6em}
@@ -191,10 +192,16 @@
         \item $\displaystyle{\int \frac{x^2}{x^2+6x+8} \, dx}$
         \begin{itemize}[label={}]
             \item We can start by simplifying the integral and bring the integral of 1 to the front.
+            \item This can be achieved through polynomial long division.
+            \begin{center}
+                \polylongdiv{x^2}{x^2+6x+8}
+            \end{center}
+            \item
+            \item We can then split the integral into two parts by using the remainder of the polynomial long division.
             \begin{equation*}
                 \begin{split}
                     \int \frac{x^2}{x^2+6x+8} \, dx &= \int \frac{x^2+6x+8-6x-8}{x^2+6x+8} \, dx \\
-                    &= \int \frac{x^2+6x+8}{x^2+6x+8} \, dx - \int \frac{6x+8}{x^2+6x+8} \, dx \\
+                    &= \int 1 \, dx - \int \frac{6x+8}{x^2+6x+8} \, dx \\
                     &= \int 1 \, dx - 2 \int \frac{3x+4}{x^2+6x+8} \, dx \\
                 \end{split}
             \end{equation*}
@@ -265,7 +272,12 @@
                 \int_{0}^{\infty} \frac{10000}{(t+2)^2} \, dt &= \int_{0}^{\infty} 10000(t+2)^{-2} \, dt \\
                 &= \left[ -10000(t+2)^{-1} \right]_{0}^{\infty} \\
                 &= \left[ -\frac{10000}{t+2} \right]_{0}^{\infty} \\
-                &= \left(\lim_{t \to \infty}  -\frac{10000}{t+2} \right) - \left( -\frac{10000}{0+2} \right) \\
+            \end{aligned}
+        \end{equation*}
+        \item We let $k=t$ and $k=0$ as $t \to \infty$.
+        \begin{equation*}
+            \begin{aligned}
+                &= \left(\lim_{k \to \infty}  -\frac{10000}{k+2} \right) - \left( -\frac{10000}{0+2} \right) \\
                 &= 0 - \left( -\frac{10000}{2} \right) \\
                 &= \frac{10000}{2} \\
                 &= 5000 \\
@@ -362,23 +374,68 @@
         \end{equation*}
         of the solution $f$.
         \begin{itemize}[label={}]
-            \item To find and calculate the coefficients of the power series representation, we can use the formula:
-            \begin{equation*}
-                c_n = \frac{f^{(n)}(0)}{n!}
+            \item \begin{equation*}
+            f(a) = \sum_{n=0}^{\infty} c_n a^n
             \end{equation*}
-            \item We can find the first derivative of $f(x)$.
-            \item 
+
+            \item Now, take the derivative of both sides of the power series representation of $f(x)$:
+
+            \begin{equation*}
+            f'(x) = \sum_{n=1}^{\infty} n c_n x^{n-1}
+            \end{equation*}
+
+            \item Substituting $x=a$ into this expression, we get:
+
+            \begin{equation*}
+            f'(a) = \sum_{n=1}^{\infty} n c_n a^{n-1}
+            \end{equation*}
+
+            \item We can continue taking derivatives of both sides of the power series representation of $f(x)$ to obtain expressions for higher-order derivatives of $f(x)$ evaluated at $x=a$. Specifically, we have:
+
+            \begin{align*}
+            f''(x) &= \sum_{n=2}^{\infty} n(n-1) c_n x^{n-2} \\
+            f''(a) &= \sum_{n=2}^{\infty} n(n-1) c_n a^{n-2} \\
+            f'''(x) &= \sum_{n=3}^{\infty} n(n-1)(n-2) c_n x^{n-3} \\
+            f'''(a) &= \sum_{n=3}^{\infty} n(n-1)(n-2) c_n a^{n-3} \\
+            &\vdots
+            \end{align*}
+
+            \item We can use these expressions to solve for the coefficients $c_n$ using a system of equations. Specifically, we have:
+
+            \begin{align*}
+            f(a) &= c_0 \\
+            f'(a) &= c_1 \\
+            f''(a) &= 2c_2 \\
+            f'''(a) &= 3 \cdot 2 \cdot c_3 \\
+            &\vdots \\
+            f^{(n)}(a) &= n! \cdot c_n \\
+            &\vdots
+            \end{align*}
+
+            Solving this system of equations for the coefficients $c_n$, we get:
+
+            \begin{equation*}
+            c_n = \frac{f^{(n)}(a)}{n!}
+            \end{equation*}
+
+            where $f^{(n)}(a)$ denotes the $n$th derivative of $f(x)$ evaluated at $x=a$.
         \end{itemize}
 
         % Question 7b
 
         \item Calculate the radius of convergence of the power series of part (a).
         \begin{itemize}[label={}]
-            \item To calculate the radius of convergence, we can use the ratio test. We can see that
-            \item $\displaystyle{\lim_{n \to \infty} \left| \frac{c_{n+1} x^{n+1}}{c_n x^n} \right| = \lim_{n \to \infty} \left| \frac{c_{n+1}}{c_n} x \right| = \lim_{n \to \infty} \left| \frac{D c_n}{c_n} x \right| = \lim_{n \to \infty} \left| D x \right|}$. Since $\displaystyle{\lim_{n \to \infty} \left| D x \right|}$, we can calculate the radius of convergence by $\displaystyle{\frac{1}{D x} < 1}$. Therefore, the radius of convergence is $\displaystyle{\frac{1}{D}}$.
+            \item To calculate the radius of convergence, we can use the ratio test. 
+            \item We can see that
+            \begin{equation*}
+                \lim_{n \to \infty} \left| \frac{c_{n+1} x^{n+1}}{c_n x^n} \right| = \lim_{n \to \infty} \left| \frac{c_{n+1}}{c_n} x \right| = \lim_{n \to \infty} \left| \frac{D c_n}{c_n} x \right| = \lim_{n \to \infty} \left| D x \right|.
+            \end{equation*}
+            \item Since $\displaystyle{\lim_{n \to \infty} \left| D x \right|}$, we can calculate the radius of convergence by $\displaystyle{\frac{1}{D x} < 1}$. 
+            \item Therefore, the radius of convergence is $\displaystyle{\frac{1}{D}}$.
         \end{itemize}
 
         % Question 7c
+        \newpage
 
         \item Use the Taylor series for the exponential function $e^t$ to derive the Taylor series of the function $g(x)=f_0e^{Dx}$ and compare the result with the power series you obtained in
         part (a).
