@@ -415,10 +415,10 @@
             Solving this system of equations for the coefficients $c_n$, we get:
 
             \begin{equation*}
-            c_n = \frac{f^{(n)}(a)}{n!}
+            c_n = \frac{f_0(D^n)}{n!}
             \end{equation*}
 
-            where $f^{(n)}(a)$ denotes the $n$th derivative of $f(x)$ evaluated at $x=a$.
+            where $f_0(D^n)$ denotes the $n$th derivative of $f(x)$.
         \end{itemize}
 
         % Question 7b
@@ -426,12 +426,23 @@
         \item Calculate the radius of convergence of the power series of part (a).
         \begin{itemize}[label={}]
             \item To calculate the radius of convergence, we can use the ratio test. 
-            \item We can see that
+            \item The ratio test in terms of $c_n x^n$ is:
             \begin{equation*}
-                \lim_{n \to \infty} \left| \frac{c_{n+1} x^{n+1}}{c_n x^n} \right| = \lim_{n \to \infty} \left| \frac{c_{n+1}}{c_n} x \right| = \lim_{n \to \infty} \left| \frac{D c_n}{c_n} x \right| = \lim_{n \to \infty} \left| D x \right|.
+                \lim_{n \to \infty} \left| \frac{c_{n+1} x^{n+1}}{c_n x^n} \right|
             \end{equation*}
-            \item Since $\displaystyle{\lim_{n \to \infty} \left| D x \right|}$, we can calculate the radius of convergence by $\displaystyle{\frac{1}{D x} < 1}$. 
-            \item Therefore, the radius of convergence is $\displaystyle{\frac{1}{D}}$.
+            \item We can substitute $c_n$ into the ratio test.
+            \begin{equation*}
+                \begin{aligned}
+                    \lim_{n \to \infty} \left| \frac{c_{n+1} x^{n+1}}{c_n x^n} \right| &= \lim_{n \to \infty} \left| \frac{\frac{f_0 (D^{n+1})}{(n+1)!} x^{n+1}}{\frac{f_0 (D^n)}{n!} x^n} \right| \\
+                    &= \lim_{n \to \infty} \left| \frac{f_0 (D^{n+1}) x^{n+1}}{f_0 (D^n) x^n} \cdot \frac{n!}{(n+1)!} \right| \\
+                    &= \lim_{n \to \infty} \left| \frac{Dx}{n+1} \right| \\
+                    &= |Dx| \lim_{n \to \infty} \left| \frac{1}{n+1} \right| \\
+                    &= |Dx| \cdot 0 \\
+                    &= 0 \\
+                \end{aligned}
+            \end{equation*}
+            \item Since the limit of the ratio test is $0$, it means that the series is convergent for all $x$.
+            \item Therefore, the interval of convergence is $(-\infty, \infty)$ and the radius of convergence is $\infty$.
         \end{itemize}
 
         % Question 7c
